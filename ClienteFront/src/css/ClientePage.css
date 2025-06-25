@@ -1,0 +1,53 @@
+.full-width-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a1d 0%, #1a1a2e 50%, #0e0e2c 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.clientes-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.clientes-wrapper h1 {
+  color: #f1f5f9;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.clientes-wrapper > button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+/* Mensajes de estado */
+.clientes-wrapper > p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .clientes-wrapper {
+    padding: 1rem;
+  }
+}
