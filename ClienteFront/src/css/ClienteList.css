@@ -1,0 +1,104 @@
+/* ===== CLIENTELIST.CSS ===== */
+.cliente-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cliente-card {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cliente-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+}
+
+.cliente-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.cliente-card h3 {
+  color: #f1f5f9;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cliente-card p {
+  color: #cbd5e1;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.cliente-card p strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.cliente-card button {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+  font-family: inherit;
+}
+
+.cliente-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+/* Mensaje cuando no hay clientes */
+.cliente-list + p {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.2rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 15px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  max-width: 500px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cliente-list {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .cliente-card {
+    padding: 1.5rem;
+  }
+}
