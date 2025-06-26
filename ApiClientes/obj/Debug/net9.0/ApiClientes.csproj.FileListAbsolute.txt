@@ -260,3 +260,4 @@ C:\Users\PC\Desktop\hola\ApiClientes\obj\Debug\net9.0\ApiClientes.pdb
 C:\Users\PC\Desktop\hola\ApiClientes\obj\Debug\net9.0\ApiClientes.genruntimeconfig.cache
 C:\Users\PC\Desktop\hola\ApiClientes\obj\Debug\net9.0\ref\ApiClientes.dll
 C:\Users\PC\Desktop\hola\ApiClientes\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\PC\Desktop\hola\ApiClientes\obj\Debug\net9.0\ApiClientes.sourcelink.json
