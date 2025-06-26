@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://clientes-lkjk.onrender.com/api/clientes';
+const API_URL = 'https://clientes-lkjk.onrender.com/clientes';
 
 
 export const getClientes = () => axios.get(API_URL);
